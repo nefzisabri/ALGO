@@ -1,10 +1,10 @@
 ALGORITHM checkpoint
 VAR
-let sentence :=STRING 
-let length,words,vowels :=integer := 0;
-const vowel :=vowel : ARRAY_OF char[];
+let sentence :STRING 
+let length,words,vowels :integer := 0;
+const vowel :vowel : ARRAY_OF char[];
 BEGIN
-vowel= ['a','e','i','o','u']
+vowel:= ['a','e','i','o','u']
 FOR (let i = 0; i < sentence.length; i++) {
   let char = sentence[i];
   SWITCH (char)) DO
@@ -17,4 +17,4 @@ END_FOR
 END
 console.log("Length: " + length);
 console.log("Words: " + words);
-console.log("Vowels: " + vowels);
+console.log("Vowels: " + vowel);
